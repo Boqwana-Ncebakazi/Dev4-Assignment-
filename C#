@@ -1,0 +1,36 @@
+
+    public class Rectangle{
+      int height;
+      int width;
+       public rectangle(int h,int wid){
+           Height=h;
+           Width=wid;
+           }
+           public void input_height(){
+            Console.WriteLine("Enter the height of a rectangle");
+             Height=Convert.Toint32(Console.ReadLine());
+             }
+           
+           public void input_width(){
+            Console.WriteLine("Ethe the width of the rectangle");
+              Width=Conver.Toint32(Console.ReadLine());
+               }
+
+       static int area(){
+
+       int area=height*width;
+        return area;
+        }
+          static int perimeter(){
+            int perimeter= (height*2)+(width*2);
+              return perimeter;
+               }
+                 static void main(String[]args){
+                      int h=input_height();
+                       int w=input_width();
+                        int a=input_area();
+                        int p= input_perimeter();
+                       Console.WriteLine("The area of a rectangle is:"+a+"m"):
+                       Console.WriteLine("The perimeter of a rectangle is:"+p+"m");
+                        } 
+                           }
