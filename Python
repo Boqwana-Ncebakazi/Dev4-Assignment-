@@ -1,0 +1,21 @@
+def input_height():
+  h= input("Enter the height of a rectangle :")
+ return h
+def input_width():
+  w= input('Enter the width of a rectangle:")
+    return w
+def input_area()
+  area= height* width
+   return area
+
+def input_perimeter()
+   perimeter=(height*2)+(width*2)
+    return perimeter
+
+if name== main':
+  h=input_height()
+   w= input_width()
+   area= input_area()
+   perimeter= input_perimeter()
+   print("You entered", area', and said that its name is"+a+in)
+   print*"You entered", perimeter', and said that its name is" +p+in)
