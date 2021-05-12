@@ -1,0 +1,54 @@
+import java.util.Scanner;
+
+/**
+ *
+ * @author ncebakazi
+ */
+public class Rectangle {
+           public int height;
+           public int width;
+
+ public Rectangle(int height, int width){
+     height=0;
+     width=0;
+ }
+ public void input_Data(){
+     Scanner scan= new Scanner(System.in);
+     System.out.println("Enter the height :");
+     height= scan.nextInt();
+     System.out.println("Enter the width :");
+     width= scan.nextInt();
+        
+ }
+    
+ public int calcPerimeter(){
+     int perimeter;
+    perimeter = 2*(height+width);
+    return perimeter;
+            
+ }
+ public int calcArea(){
+     int area;
+     area= height*width;
+     return area;
+    
+}
+ public void output_result(){
+     System.out.println("The Perimeter of the rectangle is" + calcPerimeter());
+     System.out.println("The Area of the rectangle is" + calcArea());
+ }
+         
+         
+    
+}
+
+public class Tester {
+    public static void main(String[]args){
+        Rectangle R= new Rectangle(6,2);
+        R.calcArea();
+        R.calcPerimeter();
+        R.input_Data();
+        R.output_result();
+    }
+    
+}
