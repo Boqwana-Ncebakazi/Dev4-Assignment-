@@ -1,0 +1,29 @@
+class pythonProject:
+      def __init__(self,height,width):
+            self.height= height
+            self.width=width
+
+      def input_attributes(self):
+          self.height = float(input("Enter the height :"))
+          self.width = float(input("Enter the width :"))
+
+
+
+      def output_result(self):
+          print("area of a rectangle :",calculate_area(self.height,self.width))
+          print("perimeter of a rectangle :", calculate_perimeter(self.height,self.width))
+
+
+      def calculate_area(self):
+          return self.height +self.width
+
+
+      def calculate_perimeter(self):
+           return 2 * (self.height + self.width)
+
+
+      if __name__=='__main__':
+          obj= pythonProject(6,2)
+          obj.output_result()
+          obj.input_attributes()
+          obj.out_result()
